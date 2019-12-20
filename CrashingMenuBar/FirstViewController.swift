@@ -59,8 +59,8 @@ class DetailViewController: UIViewController {
 //        self.navigationItem.rightBarButtonItems = nil
 
         // Add items each time If some data is available - assume for this demo that data is available
-        let items = [UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTapped(sender:)))]
-        self.navigationItem.rightBarButtonItems = items
+        let items = [UIBarButtonItem(image: #imageLiteral(resourceName: "more"), style: .plain, target: self, action: #selector(addTapped(sender:)))]
+        self.navigationItem.setRightBarButtonItems(items, animated: true)
     }
 
 
